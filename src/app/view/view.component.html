@@ -1,0 +1,38 @@
+<head>
+
+    
+</head>
+<body>
+    <div class = "container color-dark">
+        <div class="col">
+            <h1 class="text-center">Formula peso</h1>   
+            <p>Pedro de Jesus Hernandez Rojas <br>
+               Matricula s19004903  
+               
+            </p>
+        </div>
+    </div>
+    <div class = "container color-light ">
+        <div class="col">
+            <p class="sn">Fomulario para calcular el peso de un objeto (peso = masa * gravedad) donde la gravedad es igual a 9.8 m/s</p>
+            <form >
+                <input type="text" class="txt" name= "item" placeholder="Ingrese la masa" [(ngModel)]="masaText" required>
+                <input type="submit" class="btn" [value]="btnText" (click)= "calcular()">
+            </form>
+        </div>
+    
+        <div class="col">
+            <p>Resultado: </p>
+            <div class="col">
+                <p class="life-container" >
+                    {{resultado}}
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+  
+
+
+</body>
